@@ -1,3 +1,5 @@
+using Tenders.Guru.Infrastructure;
+
 namespace Tenders.Guru.API;
 
 public class Program
@@ -9,6 +11,7 @@ public class Program
         builder.Services.AddControllers();
         builder.Services.AddOpenApi();
         builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddInfrastructure(builder.Configuration);
         
         var app = builder.Build();
 

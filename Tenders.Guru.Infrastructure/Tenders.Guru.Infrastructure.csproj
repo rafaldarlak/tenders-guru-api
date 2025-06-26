@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Tenders.Guru.Http.Client\Tenders.Guru.Http.Client.csproj" />
       <ProjectReference Include="..\Tenders.Guru.Domain\Tenders.Guru.Domain.csproj" />
     </ItemGroup>
     

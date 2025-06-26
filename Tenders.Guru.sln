@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenders.Guru.Domain", "Tend
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenders.Guru.Infrastructure", "Tenders.Guru.Infrastructure\Tenders.Guru.Infrastructure.csproj", "{AFA14516-31FA-4ED4-B2B0-E3147516A296}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenders.Guru.Functions", "Tenders.Guru.Functions\Tenders.Guru.Functions.csproj", "{36802800-6612-4701-9A24-2578C898A6E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenders.Guru.Http.Client", "Tenders.Guru.Http.Client\Tenders.Guru.Http.Client.csproj", "{7B710773-113B-4027-A783-07264EB70CCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +26,9 @@ Global
 		{AFA14516-31FA-4ED4-B2B0-E3147516A296}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFA14516-31FA-4ED4-B2B0-E3147516A296}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFA14516-31FA-4ED4-B2B0-E3147516A296}.Release|Any CPU.Build.0 = Release|Any CPU
-		{36802800-6612-4701-9A24-2578C898A6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36802800-6612-4701-9A24-2578C898A6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36802800-6612-4701-9A24-2578C898A6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36802800-6612-4701-9A24-2578C898A6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B710773-113B-4027-A783-07264EB70CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B710773-113B-4027-A783-07264EB70CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B710773-113B-4027-A783-07264EB70CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B710773-113B-4027-A783-07264EB70CCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
