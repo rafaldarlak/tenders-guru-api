@@ -5,7 +5,7 @@ namespace Tenders.Guru.Http.Client.Models;
 internal record SupplierDto
 {
     [JsonPropertyName("id")]
-    public string Id { get; init; }
+    public int Id { get; init; }
     
     [JsonPropertyName("name")]
     public string Name { get; init; }

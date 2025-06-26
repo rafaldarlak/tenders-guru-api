@@ -15,9 +15,16 @@ public class TenderGuruApiClient : ITenderGuruApiClient
 
     public async Task<IList<Tender>> GetTendersAsync(int page, int pageSize, CancellationToken cancellationToken = default)
     {
-         var response = await _httpClient.GetFromJsonAsync<IList<TenderDto>>($"tenders?page={page}&pageSize={pageSize}", cancellationToken);
+         var responseMessage = await _httpClient.GetAsync($"tenders?page={page}&pageSize={pageSize}", cancellationToken);
 
-         return ParseTenders(response)
+         if (!responseMessage.IsSuccessStatusCode)
+         {
+             throw new HttpRequestException($"Failed to fetch tenders: {responseMessage.StatusCode}");
+         }
+         
+         var tenders = await responseMessage.Content.ReadFromJsonAsync<TendersGuruResponse<IList<TenderDto>>>(cancellationToken);
+
+         return ParseTenders(tenders.Data)
              .ToList();
     }
 

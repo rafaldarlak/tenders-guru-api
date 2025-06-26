@@ -9,11 +9,11 @@ namespace Tenders.Guru.Http.Client;
 
 public static class Startup
 {
-    public static IServiceCollection AddTenderGuruHttpClient(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddTendersGuruHttpClient(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddHttpClient<ITenderGuruApiClient>("TenderGuru", client =>
+        services.AddHttpClient<ITenderGuruApiClient, TenderGuruApiClient>(client =>
             {
-                client.BaseAddress = new Uri(configuration["TenderGuruApi:BaseUrl"]);
+                client.BaseAddress = new Uri(configuration["TendersGuruApi:BaseUrl"]);
                 client.DefaultRequestHeaders.Add("Accept", MediaTypeNames.Application.Json);
             })        .AddTransientHttpErrorPolicy(policyBuilder =>
                 policyBuilder.WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))))
