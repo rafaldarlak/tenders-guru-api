@@ -24,11 +24,11 @@ public class TendersGuruDbContext : DbContext
             
             entity.Property(e => e.Title)
                 .IsRequired()
-                .HasMaxLength(200);
+                .HasMaxLength(500);
             
             entity.Property(e => e.Description)
                 .IsRequired()
-                .HasMaxLength(200);
+                .HasMaxLength(2000);
             
             entity.Property(e => e.ExternalId)
                 .IsRequired()

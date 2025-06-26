@@ -29,4 +29,14 @@ public class TendersRepository : ITendersRepository
     {
         throw new NotImplementedException();
     }
+
+    public void Add(IList<Tender> tenders)
+    {
+        _dbContext.Tenders.AddRange(tenders);
+    }
+
+    public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        await _dbContext.SaveChangesAsync(cancellationToken);
+    }
 }

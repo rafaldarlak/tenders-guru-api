@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Tenders.Guru.Infrastructure;
 
@@ -11,9 +12,11 @@ using Tenders.Guru.Infrastructure;
 namespace Tenders.Guru.Infrastructure.Migrations
 {
     [DbContext(typeof(TendersGuruDbContext))]
-    partial class TendersGuruDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250626224715_AddMaxLenghtOfDescriptionInTendersTable")]
+    partial class AddMaxLenghtOfDescriptionInTendersTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
