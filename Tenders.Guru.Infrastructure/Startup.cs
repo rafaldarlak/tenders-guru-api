@@ -6,7 +6,7 @@ namespace Tenders.Guru.Infrastructure;
 
 public static class Startup
 {
-    public static void ConfigureServices(IServiceCollection services)
+    public static void AddInfrastructure(IServiceCollection services)
     {
         services.AddDbContext<TendersGuruDbContext>(options =>
             options.UseSqlServer("TendersGuruDbConnectionString"));

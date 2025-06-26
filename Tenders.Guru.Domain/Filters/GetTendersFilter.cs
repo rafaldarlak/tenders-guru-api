@@ -1,4 +1,5 @@
 using Tenders.Guru.Domain.Entities;
+using Tenders.Guru.Domain.Enums;
 
 namespace Tenders.Guru.Domain.Filters;
 
@@ -11,6 +12,7 @@ public class GetTendersFilter : IFilter<Tender>
     public DateTimeOffset? DateFrom { get; init; }
     public DateTimeOffset? DateTo { get; init; }
     public string SupplierId { get; init; }
+    public GetTenderSortType? SortType { get; init; }
     
     public IQueryable<Tender> Apply(IQueryable<Tender> query)
     {
@@ -37,6 +39,16 @@ public class GetTendersFilter : IFilter<Tender>
         if (!string.IsNullOrEmpty(SupplierId))
         {
             query = query.Where(t => t.ExternalId == SupplierId);
+        }
+        
+        if (SortType.HasValue)
+        {
+            query = SortType.Value switch
+            {
+                GetTenderSortType.PriceAsc => query.OrderBy(t => t.AmountEuro),
+                GetTenderSortType.PriceDesc => query.OrderByDescending(t => t.AmountEuro),
+                _ => query
+            };
         }
         
         return query;

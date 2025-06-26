@@ -8,7 +8,8 @@ public class Program
         
         builder.Services.AddControllers();
         builder.Services.AddOpenApi();
-
+        builder.Services.AddEndpointsApiExplorer();
+        
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
