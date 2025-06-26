@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenders.Guru.API", "Tenders.Guru.API\Tenders.Guru.API.csproj", "{F717333C-BB33-4D60-B2A9-0DC002A3FA4D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenders.Guru.Domain", "Tenders.Guru.Domain\Tenders.Guru.Domain.csproj", "{0E6656D0-3A4E-401B-9447-A4AC8A0BF00B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenders.Guru.Infrastructure", "Tenders.Guru.Infrastructure\Tenders.Guru.Infrastructure.csproj", "{AFA14516-31FA-4ED4-B2B0-E3147516A296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenders.Guru.Functions", "Tenders.Guru.Functions\Tenders.Guru.Functions.csproj", "{36802800-6612-4701-9A24-2578C898A6E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{F717333C-BB33-4D60-B2A9-0DC002A3FA4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F717333C-BB33-4D60-B2A9-0DC002A3FA4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F717333C-BB33-4D60-B2A9-0DC002A3FA4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E6656D0-3A4E-401B-9447-A4AC8A0BF00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E6656D0-3A4E-401B-9447-A4AC8A0BF00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E6656D0-3A4E-401B-9447-A4AC8A0BF00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E6656D0-3A4E-401B-9447-A4AC8A0BF00B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA14516-31FA-4ED4-B2B0-E3147516A296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA14516-31FA-4ED4-B2B0-E3147516A296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA14516-31FA-4ED4-B2B0-E3147516A296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA14516-31FA-4ED4-B2B0-E3147516A296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36802800-6612-4701-9A24-2578C898A6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36802800-6612-4701-9A24-2578C898A6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36802800-6612-4701-9A24-2578C898A6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36802800-6612-4701-9A24-2578C898A6E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
